@@ -1,0 +1,9 @@
+html , body {
+	margin: 0;
+	padding: 10px;
+	font-family: arial;
+}
+
+img {
+	border: 1px #000 solid;
+}

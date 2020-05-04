@@ -1,0 +1,30 @@
+html , body {
+	margin: 0;
+	padding: 10px;
+	font-family: arial;
+}
+
+#topo {
+	background: #f0f0f0;
+	padding: 20px 0px;
+	text-align: center;
+}
+
+#conteudo {
+	float: left;
+	width: 80%;
+	background: #ccc;
+}
+
+#menu-lateral {
+	float: left;
+	width: 20%;
+	background: #abc;	
+}
+
+#rodape {
+	clear: both;
+	background: #f0f0f0;
+	padding: 20px 0px;
+	text-align: center;	
+}

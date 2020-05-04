@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Meu Blog com HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+	<script src="modernizr.js"></script>
+</head>
+<body>
+
+<header>
+	<h1>Meu Blog Pessoal</h1>
+
+	<nav>
+		<ul>
+			<li><a href="pagina1.html">Home</a></li>
+			<li><a href="pagina2.html">Multimídia</a></li>
+			<li><a href="pagina3.html">Contato</a></li>
+		</ul>
+	</nav>
+
+</header>
+
+<section>
+
+	<h2>Contato</h2>
+
+	<form>
+
+	<p>
+		<label>Nome: *</label>
+		<input type="text" placeholder="Digite seu nome" required autofocus>
+	</p>
+
+	<p>
+		<label>Email: *</label>
+		<input type="email" placeholder="Digite seu email" required>
+	</p>
+
+	<p>
+		<label>Telefone: *</label>
+		<input type="tel" pattern="^\(?\d{2}\)?[\s-]?\d{4}-?\d{4}$" title="Formato válido (99) 9999-9999" required>
+	</p>
+
+	<p>
+		<label>Como conheceu: *</label>
+		<input type="text" list="cc">
+		<datalist id="cc">
+			<option value="Google">
+			<option value="Indicação de amigos">
+			<option value="Outros">
+		</datalist>	
+	</p>
+
+	<p>
+		<label>Mensagem:</label>
+		<textarea rows="3" cols="50" required></textarea>
+	</p>
+
+	<p>
+		<input type="submit" id="enviar" value="Enviar">
+	</p>
+
+	</form>
+</section>
+
+<aside>
+
+	<section>
+		<h2>Sobre mim</h2>
+		<p>Maurício Fragoso, 28 anos, Analista de Sistemas</p>
+	</section>
+	
+	<nav>
+		<h2>Mais Posts</h2>
+		<ul>
+			<li><a href="#">Aula de JS</a></li>
+			<li><a href="#">Aula de PHP</a></li>
+			<li><a href="#">Aula de MySQL</a></li>
+		</ul>
+	</nav>
+</aside>
+
+<footer>
+	<p><small>Esse é meu blog pessoal.</small></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+
+<script>
+window.onload = function(){
+	var canvas = document.querySelector('#fundatec').getContext('2d');
+	canvas.fillStyle = '#FF0000';
+	canvas.fillRect(0, 0, 100, 50);
+	canvas.strokeStyle = '#FF9999';
+	canvas.lineWidth = 3;
+	canvas.strokeRect(6, 6, 100, 50);
+}
+</script>
+
+</head>
+<body>
+
+<h1>HTML5 - Canvas</h1>
+
+<canvas id="fundatec"></canvas>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Geolocalização</title>
+	<script src="modernizr.js"></script>
+
+	<script>
+	function getPosition(){
+		if (Modernizr.geolocation){
+			navigator.geolocation.getCurrentPosition(function(posicao){
+				lat = posicao.coords.latitude;
+				lon = posicao.coords.longitude;
+				alert(lat+' , '+lon);
+				window.location.href='https://maps.google.com.br/maps?q='+lat+',+'+lon+'';
+			});
+		}
+		else{
+			alert('Seu navegador não suporta Geolocalização');
+		}
+	}
+
+	window.onload = function() {
+		getPosition();
+	}
+	</script>
+
+</head>
+<body>
+
+<h1>Página que utilizará Geolocalização</h1>
+
+</body>
+</html>

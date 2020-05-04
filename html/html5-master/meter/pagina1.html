@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+<body>
+
+<h1>HTML5 - Meter</h1>
+
+<h3>min e max</h3>
+
+<p>0.8 em uma faixa de 0 a 1 (pois não definimos min e max), logo, 80%.</p>
+<p><meter value="0.8" tabindex="1"></meter></p>
+
+<p>9 em uma escala que vai de 3 a 25.</p>
+<p><meter value="9" min="3" max="25"></meter></p>
+
+<h3>low, high e optimum</h3>
+
+<p>
+<ul>
+  <li><b>0 a 5</b> - Considerado inapropriado.</li>
+  <li><b>6 a 7</b> - Considerado baixo.</li>
+  <li><b>8 a 9</b> - Considerado alto.</li>
+  <li><b>10</b> - Considerado ótimo.</li>
+</ul>
+</p>
+
+<p>3 pontos em 10 possíveis.</p>
+<p><meter value="3" min="0" max="10" low="6" high="8" optimum="10"></meter></p>
+
+<p>6 pontos em 10 possíveis.</p>
+<p><meter value="6" min="0" max="10" low="6" high="8" optimum="10"></meter></p>
+
+<p>7 pontos em 10 possíveis.</p>
+<p><meter value="7" min="0" max="10" low="6" high="8" optimum="10"></meter></p>
+
+<p>8 pontos em 10 possíveis.</p>
+<p><meter value="8" min="0" max="10" low="6" high="8" optimum="10"></meter></p>
+
+<p>10 pontos em 10 possíveis.</p>
+<p><meter value="10" min="0" max="10" low="6" high="8" optimum="10"></meter></p>
+
+</body>
+</html>

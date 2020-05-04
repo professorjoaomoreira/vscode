@@ -1,0 +1,27 @@
+html , body {
+	margin: 0;
+	padding: 10px;
+	font-family: arial;
+}
+
+p {
+	float: left;
+	width: 100%;
+}
+
+label {
+	display: block;
+	float: left;
+	width: 100px;
+}
+
+input {
+	float: left;
+	width: 250px;
+}
+
+#enviar {
+	width: auto !important;
+	padding: 2px 10px;
+	cursor: pointer;
+}

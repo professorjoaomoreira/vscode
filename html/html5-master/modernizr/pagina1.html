@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Teste Modernizr</title>
+	<script src="modernizr.js"></script>
+
+	<script>
+	window.onload = function() {
+		if (Modernizr.webgl){
+		   alert('Seu navegador suporta WebGL =]');
+		}
+		else{
+			alert('Seu navegador não suporta WebGL =[');
+		}
+	}
+	</script>
+
+</head>
+<body>
+
+<h1>Página que utilizará WebGL</h1>
+
+</body>
+</html>

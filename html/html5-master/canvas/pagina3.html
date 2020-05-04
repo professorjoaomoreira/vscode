@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+
+<script>
+window.onload = function(){
+
+	var canvas = document.querySelector('#fundatec');
+	var contexto = canvas.getContext("2d");
+
+	contexto.lineWidth = 8;
+	contexto.strokeStyle = "#0000FF";
+
+	// arc(x, y, raio, anguloInicial, anguloFinal, sentido)
+	contexto.arc(canvas.width/2, canvas.height/2, 65, Math.PI * 1.1, Math.PI * 1.9, false);
+	contexto.stroke();
+
+	contexto.arc(canvas.width/2, canvas.height/2, 65, Math.PI*2, 0, false);
+	contexto.stroke();
+
+	contexto.arc(canvas.width/2, canvas.height/2, 65, Math.PI, 0, true);
+	contexto.stroke();	
+
+}
+</script>
+
+</head>
+<body>
+
+<h1>HTML5 - Canvas</h1>
+
+<canvas id="fundatec"></canvas>
+
+</body>
+</html>

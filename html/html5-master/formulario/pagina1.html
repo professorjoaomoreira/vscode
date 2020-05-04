@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+<body>
+
+<h1>HTML5 - Formulário</h1>
+
+<form>
+
+<p>
+	<label>Nome: *</label>
+	<input type="text" placeholder="Digite seu nome" required>
+</p>
+
+<p>
+	<label>Email: *</label>
+	<input type="email" placeholder="Digite seu email" required autofocus>
+</p>
+
+<p>
+	<label>Telefone: *</label>
+	<input type="tel" required pattern="^\(?\d{2}\)?[\s-]?\d{4}-?\d{4}$" title="Formato válido (99) 9999-9999">
+</p>
+
+<p>
+	<label>Site:</label>
+	<input type="url" autocomplete="off">
+</p>
+
+<p>
+	<label>País:</label>
+	<input type="text" list="pais">
+	<datalist id="pais">
+		<option value="Alemanha">
+		<option value="Brasil">
+		<option value="Canadá">
+		<option value="Dinamarca">
+		<option value="Espanha">
+	</datalist>	
+</p>
+
+<p>
+	<label>Idade:</label>
+	<input type="number" min="10" max="90" step="1">
+</p>
+
+<p>
+	<label>Nascimento:</label>
+	<input type="date">
+</p>
+
+<p>
+	<label>Horário:</label>
+	<input type="time">
+</p>
+
+<p>
+	<label>Cor Favorita:</label>
+	<input type="color">
+</p>
+
+<p>
+	<label>Range (slider):</label>
+	<input type="range" min="0" max="20" step="2">
+</p>
+
+<p>
+	<label>Currículo e Foto:</label>
+	<input type="file" name="arquivos[]" multiple>
+</p>
+
+<p>
+	<label>Observações:</label>
+	<textarea rows="3" cols="50" maxlength="10"></textarea>
+</p>
+
+<p>
+	<input type="submit" id="enviar" value="Salvar">
+</p>
+
+</form>
+
+</body>
+</html>
